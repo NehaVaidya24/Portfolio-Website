@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="CSS/about.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <h1>Port <span>folio</span></h1>
+        </div>
+
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="experience.html">experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slider-content">
+          <h1>Hi, I'm <span>Neha Vaidya</span></h1>
+          <h2>Software Developer <span> | </span></h2>
+          <p>
+            I build scalable software applications using Java, OOP concepts, and
+            modern web technologies.
+          </p>
+          <a
+            href="assets/Neha_Vaidya_Resume.pdf"
+            download
+            class="btn"
+            id="resume-btn"
+          >
+            Download Resume
+          </a>
+
+          <a href="contact.css" id="contact-btn"> Contact me </a>
+        </div>
+        <div class="slider-img">
+          <img src="assets/profile photo/neha-image.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div class="about">
+        <h2>About <span>Me</span></h2>
+        <p>Get to know more about my background and passion</p>
+
+        <div class="about-grid">
+          <div class="about-img show-on-scroll">
+            <img src="assets/profile photo/neha-image.jpg" alt="" />
+          </div>
+
+          <div class="about-content show-on-scroll">
+            <h3>My Journey</h3>
+            <p>
+              I’m a recent B.Tech graduate in Information Technology with a
+              strong foundation in Java, object-oriented programming, and web
+              development. My journey began with building simple HTML and CSS
+              websites and gradually evolved into developing responsive,
+              user-friendly web applications using modern frontend technologies
+              and clean coding practices.
+            </p>
+            <p>
+              Through academic projects and a web development internship, I’ve
+              gained hands-on experience in translating requirements into
+              functional solutions, optimizing performance, and ensuring smooth
+              user experiences. I’m passionate about continuous learning,
+              exploring new technologies, and contributing to real-world
+              software projects in collaborative team environments.
+            </p>
+
+            <div class="about-cards show-on-scroll">
+              <div class="about-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h4>Problem Solver</h4>
+                <p>
+                  I build effective software solutions using structured
+                  problem-solving.
+                </p>
+              </div>
+
+              <div class="about-card">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h4>User-Focused Design</h4>
+                <p>
+                  I create clean, responsive interfaces with smooth user
+                  experience.
+                </p>
+              </div>
+
+              <div class="about-card">
+                <i class="fa-solid fa-code"></i>
+                <h4>Clean Code</h4>
+                <p>
+                  I write readable, maintainable code following best practices.
+                </p>
+              </div>
+
+              <div class="about-card">
+                <i class="fa-solid fa-rocket"></i>
+                <h4>Continuous Learner</h4>
+                <p>
+                  I continuously learn new technologies to grow as a developer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2026 Created By Neha Vaidya. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

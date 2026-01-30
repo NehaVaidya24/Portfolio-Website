@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="CSS/experience.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <h1>Port <span>folio</span></h1>
+        </div>
+
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="experience.html">experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slider-content">
+          <h1>Hi, I'm <span>Neha Vaidya</span></h1>
+          <h2>Software Developer <span> | </span></h2>
+          <p>
+            I build scalable software applications using Java, OOP concepts, and
+            modern web technologies.
+          </p>
+          <a
+            href="assets/Neha_Vaidya_Resume.pdf"
+            download
+            class="btn"
+            id="resume-btn"
+          >
+            Download Resume
+          </a>
+
+          <a href="contact.css" id="contact-btn"> Contact me </a>
+        </div>
+        <div class="slider-img">
+          <img src="assets/profile photo/neha-image.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="experience">
+        <h2>Work <span>Experience</span></h2>
+        <p>My professional journey so far</p>
+
+        <div class="time show-on-scroll">
+          <div class="time-dot"></div>
+
+          <div class="experience-card show-on-scroll">
+            <div class="experience-header">
+              <h3>Web Developer Intern</h3>
+              <span class="duration">Jan 2025 – Apr 2025</span>
+            </div>
+
+            <h4>Hunar Intern (Remote)</h4>
+
+            <ul>
+              <li>
+                Designed and integrated website functionalities to improve user
+                experience.
+              </li>
+              <li>Optimized frontend code, reducing page load time by 20%.</li>
+              <li>
+                Tested and debugged applications to ensure cross-browser
+                compatibility.
+              </li>
+              <li>
+                Worked with HTML, CSS, JavaScript, and modern UI practices.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2026 Created By Neha Vaidya. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="CSS/skill.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <h1>Port <span>folio</span></h1>
+        </div>
+
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="experience.html">experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slider-content">
+          <h1>Hi, I'm <span>Neha Vaidya</span></h1>
+          <h2>Software Developer <span> | </span></h2>
+          <p>
+            I build scalable software applications using Java, OOP concepts, and
+            modern web technologies.
+          </p>
+          <a
+            href="assets/Neha_Vaidya_Resume.pdf"
+            download
+            class="btn"
+            id="resume-btn"
+          >
+            Download Resume
+          </a>
+
+          <a href="contact.css" id="contact-btn"> Contact me </a>
+        </div>
+        <div class="slider-img">
+          <img src="assets/profile photo/neha-image.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- Skill Section -->
+      <div class="skill">
+        <div class="skill" id="skills">
+          <h2>My <span>Skills</span></h2>
+          <p>Technologies and tools I work with</p>
+
+          <div class="skill-grid show-on-scroll">
+            <!-- Card 1 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-brands fa-react"></i>
+              <h3>Frontend Development</h3>
+              <p>Building responsive and user-friendly web interfaces.</p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Bootstrap</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-code"></i>
+              <h3>Backend & Java</h3>
+              <p>Developing scalable backend logic using Java.</p>
+              <div class="tags">
+                <span>Java</span>
+                <span>OOP</span>
+                <span>Collections</span>
+                <span>Exception Handling</span>
+                <span>Multithreading</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-database"></i>
+              <h3>Database & SQL</h3>
+              <p>Designing and managing relational databases.</p>
+              <div class="tags">
+                <span>SQL</span>
+                <span>PL/SQL</span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-palette"></i>
+              <h3>UI / UX & Accessibility</h3>
+              <p>
+                Designing clean, intuitive, and accessible user interfaces with
+                a strong focus on usability.
+              </p>
+              <div class="tags">
+                <span>UI Design</span>
+                <span>UX Principles</span>
+                <span>Responsive Layouts</span>
+                <span>Accessibility Basics</span>
+                <span>Figma</span>
+                <span>User-Centered Design</span>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-toolbox"></i>
+              <h3>Tools & Platforms</h3>
+              <p>Tools I use for development and collaboration.</p>
+              <div class="tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Eclipse</span>
+                <span>Figma</span>
+                <span>AWS (Basics)</span>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-brain"></i>
+              <h3>Core Concepts</h3>
+              <p>Strong fundamentals for writing clean code.</p>
+              <div class="tags">
+                <span>DSA</span>
+                <span>OOP</span>
+                <span>Problem Solving</span>
+                <span>Responsive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2026 Created By Neha Vaidya. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

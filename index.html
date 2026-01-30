@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <h1>Port <span>folio</span></h1>
+        </div>
+
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="experience.html">experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slider-content">
+          <h1>Hi, I'm <span>Neha Vaidya</span></h1>
+          <h2>Software Developer <span> | </span></h2>
+          <p>
+            I build scalable software applications using Java, OOP concepts, and
+            modern web technologies.
+          </p>
+          <a
+            href="assets/Neha_Vaidya_Resume.pdf"
+            download
+            class="btn"
+            id="resume-btn"
+          >
+            Download Resume
+          </a>
+
+          <a href="#contact" class="btn-outline" id="contact-btn">
+            Contact Me
+          </a>
+        </div>
+        <div class="slider-img">
+          <img src="assets/profile photo/neha-image.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div class="about">
+        <h2>About <span>Me</span></h2>
+        <p>Get to know more about my background and passion</p>
+
+        <div class="about-grid">
+          <div class="about-img show-on-scroll">
+            <img src="assets/profile photo/neha-image.jpg" alt="" />
+          </div>
+
+          <div class="about-content show-on-scroll">
+            <h3>My Journey</h3>
+            <p>
+              I’m a recent B.Tech graduate in Information Technology with a
+              strong foundation in Java, object-oriented programming, and web
+              development. My journey began with building simple HTML and CSS
+              websites and gradually evolved into developing responsive,
+              user-friendly web applications using modern frontend technologies
+              and clean coding practices.
+            </p>
+            <p>
+              Through academic projects and a web development internship, I’ve
+              gained hands-on experience in translating requirements into
+              functional solutions, optimizing performance, and ensuring smooth
+              user experiences. I’m passionate about continuous learning,
+              exploring new technologies, and contributing to real-world
+              software projects in collaborative team environments.
+            </p>
+
+            <div class="about-cards show-on-scroll">
+              <div class="about-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h4>Problem Solver</h4>
+                <p>
+                  I build effective software solutions using structured
+                  problem-solving.
+                </p>
+              </div>
+
+              <div class="about-card">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h4>User-Focused Design</h4>
+                <p>
+                  I create clean, responsive interfaces with smooth user
+                  experience.
+                </p>
+              </div>
+
+              <div class="about-card">
+                <i class="fa-solid fa-code"></i>
+                <h4>Clean Code</h4>
+                <p>
+                  I write readable, maintainable code following best practices.
+                </p>
+              </div>
+
+              <div class="about-card">
+                <i class="fa-solid fa-rocket"></i>
+                <h4>Continuous Learner</h4>
+                <p>
+                  I continuously learn new technologies to grow as a developer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="education">
+        <h2>My <span>Education</span></h2>
+        <p>My academic background and qualifications</p>
+
+        <div class="time show-on-scroll">
+          <div class="time-dot"></div>
+
+          <div class="education-card show-on-scroll">
+            <div class="education-header">
+              <h3>B.Tech in Information Technology</h3>
+              <span class="duration">Dec 2021 – June 2025</span>
+            </div>
+
+            <h4>Priyadarshini College of Engineering, Nagpur</h4>
+
+            <p>
+              Built a strong foundation in programming, data structures,
+              object-oriented concepts, and web development. Worked on academic
+              and real-world projects.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Section -->
+      <div class="skill">
+        <div class="skill" id="skills">
+          <h2>My <span>Skills</span></h2>
+          <p>Technologies and tools I work with</p>
+
+          <div class="skill-grid show-on-scroll">
+            <!-- Card 1 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-brands fa-react"></i>
+              <h3>Frontend Development</h3>
+              <p>Building responsive and user-friendly web interfaces.</p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Bootstrap</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-code"></i>
+              <h3>Backend & Java</h3>
+              <p>Developing scalable backend logic using Java.</p>
+              <div class="tags">
+                <span>Java</span>
+                <span>OOP</span>
+                <span>Collections</span>
+                <span>Exception Handling</span>
+                <span>Multithreading</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-database"></i>
+              <h3>Database & SQL</h3>
+              <p>Designing and managing relational databases.</p>
+              <div class="tags">
+                <span>SQL</span>
+                <span>PL/SQL</span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-palette"></i>
+              <h3>UI / UX & Accessibility</h3>
+              <p>
+                Designing clean, intuitive, and accessible user interfaces with
+                a strong focus on usability.
+              </p>
+              <div class="tags">
+                <span>UI Design</span>
+                <span>UX Principles</span>
+                <span>Responsive Layouts</span>
+                <span>Accessibility Basics</span>
+                <span>Figma</span>
+                <span>User-Centered Design</span>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-toolbox"></i>
+              <h3>Tools & Platforms</h3>
+              <p>Tools I use for development and collaboration.</p>
+              <div class="tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Eclipse</span>
+                <span>Figma</span>
+                <span>AWS (Basics)</span>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="skill-card show-on-scroll">
+              <i class="fa-solid fa-brain"></i>
+              <h3>Core Concepts</h3>
+              <p>Strong fundamentals for writing clean code.</p>
+              <div class="tags">
+                <span>DSA</span>
+                <span>OOP</span>
+                <span>Problem Solving</span>
+                <span>Responsive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training and Certification -->
+      <div class="training">
+        <h2>Training & <span>Certifications</span></h2>
+        <p>Currently enhancing my technical and professional skills</p>
+
+        <div class="time show-on-scroll">
+          <div class="time-dot"></div>
+
+          <div class="training-card show-on-scroll">
+            <div class="training-header">
+              <h3>Full Stack Development Training</h3>
+              <span class="duration">June 2025 – Present</span>
+            </div>
+
+            <h4>Giri’s Tech Hub Pvt ltd, Pune</h4>
+
+            <p>
+              Currently enhancing my full stack development skills through
+              hands-on training and real-world projects.
+            </p>
+
+            <ul>
+              <li>Frontend: HTML, CSS, JavaScript, React</li>
+              <li>Backend: Java, Spring Boot (Learning)</li>
+              <li>Database: SQL, MySQL</li>
+              <li><strong>Cloud:</strong> AWS</li>
+              <li><strong>UI/UX:</strong> Figma (Wireframing & UI Design)</li>
+              <li>Version Control: Git & GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Section -->
+      <div class="project">
+        <h2>My <span>Project</span></h2>
+        <p>A selection of my recent work</p>
+
+        <div class="project-grid show-on-scroll">
+          <!-- Project 1 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img
+              src="assets/images/ticket-booking.jpg"
+              alt="Movie Ticket Booking System"
+            />
+
+            <div class="project-content">
+              <h3>Movie Ticket Booking System</h3>
+              <p>
+                A web application to book movie tickets with a clean and
+                user-friendly interface.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Movie-ticket-booking-system"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/travel.jpg" />
+
+            <div class="project-content">
+              <h3>Travel Agency Website</h3>
+              <p>A responsive and visually appealing travel booking website.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Travel-Agency-Website"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/qr-code.avif" />
+
+            <div class="project-content">
+              <h3>QR Code Generator</h3>
+              <p>Generate QR codes dynamically.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/QR-Code-Generator"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/burger.jpg" />
+
+            <div class="project-content">
+              <h3>Burger Shop Website</h3>
+              <p>
+                A responsive website for a burger shop with menu and order
+                layout.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Burger-Shop-Website"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/snake.jpg" />
+
+            <div class="project-content">
+              <h3>Snake Game</h3>
+              <p>Classic snake game built using DOM.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Snake-Game"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/dictionar.jpg" />
+
+            <div class="project-content">
+              <h3>Dictionary Generator</h3>
+              <p>Create and manage custom dictionaries dynamically.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Dictionary-Generator"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <a href="project.html" id="view-project"
+          >View More Projects <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="experience">
+        <h2>Work <span>Experience</span></h2>
+        <p>My professional journey so far</p>
+
+        <div class="time show-on-scroll">
+          <div class="time-dot"></div>
+
+          <div class="experience-card show-on-scroll">
+            <div class="experience-header">
+              <h3>Web Developer Intern</h3>
+              <span class="duration">Jan 2025 – Apr 2025</span>
+            </div>
+
+            <h4>Hunar Intern (Remote)</h4>
+
+            <ul>
+              <li>
+                Designed and integrated website functionalities to improve user
+                experience.
+              </li>
+              <li>Optimized frontend code, reducing page load time by 20%.</li>
+              <li>
+                Tested and debugged applications to ensure cross-browser
+                compatibility.
+              </li>
+              <li>
+                Worked with HTML, CSS, JavaScript, and modern UI practices.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact" id="contact">
+        <h2>Get In <span>Touch</span></h2>
+        <p>Have a project in mind or want to collaborate? Let's talk!</p>
+        <div class="contact-container show-on-scroll">
+          <!-- Left: Contact Form -->
+          <form class="contact-form">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name" />
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" />
+
+            <label>Your Message</label>
+            <textarea rows="6" placeholder="Write your message"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+
+          <!-- Right: Contact Info -->
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Pune, India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>nehavaidya2003@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 9011990436</p>
+              </div>
+            </div>
+
+            <h4 class="follow-title">Follow Me</h4>
+            <div class="social-icons">
+              <a href="https://github.com/NehaVaidya24" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/neha-vaidya-294128351/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2026 Created By Neha Vaidya. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

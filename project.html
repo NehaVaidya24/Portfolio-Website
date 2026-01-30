@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="CSS/project.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <h1>Port <span>folio</span></h1>
+        </div>
+
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="experience.html">experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slider-content">
+          <h1>Hi, I'm <span>Neha Vaidya</span></h1>
+          <h2>Software Developer <span> | </span></h2>
+          <p>
+            I build scalable software applications using Java, OOP concepts, and
+            modern web technologies.
+          </p>
+          <a
+            href="assets/Neha_Vaidya_Resume.pdf"
+            download
+            class="btn"
+            id="resume-btn"
+          >
+            Download Resume
+          </a>
+
+          <a href="contact.css" id="contact-btn"> Contact me </a>
+        </div>
+        <div class="slider-img">
+          <img src="assets/profile photo/neha-image.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- Project Section -->
+      <div class="project">
+        <h2>My <span>Project</span></h2>
+        <p>A selection of my recent work</p>
+
+        <div class="project-grid show-on-scroll">
+          <!-- Project 1 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img
+              src="assets/images/ticket-booking.jpg"
+              alt="Movie Ticket Booking System"
+            />
+
+            <div class="project-content">
+              <h3>Movie Ticket Booking System</h3>
+              <p>
+                A web application to book movie tickets with a clean and
+                user-friendly interface.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Movie-ticket-booking-system"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/travel.jpg" />
+
+            <div class="project-content">
+              <h3>Travel Agency Website</h3>
+              <p>A responsive and visually appealing travel booking website.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Travel-Agency-Website"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/qr-code.avif" />
+
+            <div class="project-content">
+              <h3>QR Code Generator</h3>
+              <p>Generate QR codes dynamically.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/QR-Code-Generator"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/burger.jpg" />
+
+            <div class="project-content">
+              <h3>Burger Shop Website</h3>
+              <p>
+                A responsive website for a burger shop with menu and order
+                layout.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Burger-Shop-Website"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/snake.jpg" />
+
+            <div class="project-content">
+              <h3>Snake Game</h3>
+              <p>Classic snake game built using DOM.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Snake-Game"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/dictionar.jpg" />
+
+            <div class="project-content">
+              <h3>Dictionary Generator</h3>
+              <p>Create and manage custom dictionaries dynamically.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Dictionary-Generator"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/portfolio2.png" />
+
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>Personal portfolio showcasing skills.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Dictionary-Generator"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/face-detection.jpg" />
+
+            <div class="project-content">
+              <h3>Face Detection Website</h3>
+              <p>
+                A website that detects faces in images using JavaScript and
+                machine learning.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Face-Detection-Website"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/body-mass.jpg" />
+
+            <div class="project-content">
+              <h3>Body Mass Index Calculator</h3>
+              <p>
+                Calculate BMI based on weight and height with a simple
+                interface.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Body-Mass-Index-Calculator"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 10 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/captcha2.jpg" />
+
+            <div class="project-content">
+              <h3>Captcha Generation and Verification</h3>
+              <p>
+                Generate and verify CAPTCHA to prevent automated form
+                submissions.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Captcha-Generation-and-Varification"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 11 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/otp-verification-email.png" />
+
+            <div class="project-content">
+              <h3>OTP Verification - Email</h3>
+              <p>Send and verify OTPs via email for secure authentication.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/OTP-Verification---Email"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 12 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/budget-tacker.avif" />
+
+            <div class="project-content">
+              <h3>Budget Tracker</h3>
+              <p>
+                Track and manage expenses with a simple and interactive
+                interface.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/Budget-Tracker"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 13 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/otp-verification-number.avif" />
+
+            <div class="project-content">
+              <h3>OTP Generator - Number</h3>
+              <p>
+                Generate secure OTPs for phone number verification and
+                authentication.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/OTP-Generator---Number"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 14 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/chrome.webp" />
+
+            <div class="project-content">
+              <h3>Research Assistant Chrome Extension</h3>
+              <p>
+                A Chrome extension to assist researchers in collecting and
+                managing data efficiently.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/research-assistant-chrome-extension-project"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 15 -->
+          <div class="project-card premium-card show-on-scroll">
+            <img src="assets/images/fresh-fruit.jpg" />
+
+            <div class="project-content">
+              <h3>Fresh Fruit Store</h3>
+              <p>
+                A responsive e-commerce website for a fruit store with product
+                listings and cart functionality.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a
+                  href="https://github.com/NehaVaidya24/FreshFruitStore"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2026 Created By Neha Vaidya. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
