@@ -1,0 +1,676 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-color: #1a1a1a;
+  --second-color: #2d2d2d;
+  --font-color: #8b5cf6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+p,
+a {
+  font-family: "Saira", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 650px 670px 70px;
+  grid-template-areas:
+    "header header header"
+    "slider slider slider"
+    "experience experience experience"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: var(--first-color);
+}
+
+.slider {
+  grid-area: slider;
+  background-color: var(--second-color);
+}
+
+.experience {
+  grid-area: experience;
+  background-color: var(--first-color);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: var(--second-color);
+}
+
+/* Header */
+.header .logo {
+  margin-top: 30px;
+}
+
+.header .logo h1 {
+  color: white;
+  margin-left: 60px;
+  font-weight: 700;
+  /* font-size: 25px; */
+}
+
+.header .logo span {
+  color: #8b5cf6;
+  font-weight: 700;
+  /* font-size: 25px; */
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.header .menu {
+  margin-top: -30px;
+}
+
+.header .menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 60px;
+  margin-right: 40px;
+}
+
+.header .menu ul li {
+  list-style: none;
+}
+
+.header .menu ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-bottom: 6px;
+}
+
+/* underline */
+.header .menu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--font-color);
+  transition: width 0.3s ease;
+}
+
+/* hover effect */
+.header .menu ul li a:hover::after {
+  width: 100%;
+}
+
+/* Slider */
+.slider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.slider-content {
+  margin-left: 30px;
+}
+
+.slider .slider-content h1 {
+  margin-top: 120px;
+  font-size: 55px;
+  color: white;
+  word-spacing: 4px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.slider .slider-content span {
+  color: var(--font-color);
+}
+
+.slider .slider-content h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.slider .slider-content p {
+  color: white;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 17px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.slider .slider-content #resume-btn {
+  padding: 12px 28px;
+  background-color: #8b5cf6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 400;
+}
+
+.slider .slider-content #contact-btn {
+  padding: 12px 28px;
+  background-color: var(--first-color);
+  color: white;
+  text-decoration: none;
+  border: 1px solid var(--font-color);
+  border-radius: 6px;
+  margin-left: 30px;
+}
+
+.slider .slider-img {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  padding: 8px;
+  /*borderthickness*/
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  margin-left: 190px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.slider .slider-img img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 330px;
+  height: 330px;
+  margin-top: -25px;
+  margin-left: 0px;
+  animation: float 3s ease-in-out infinite;
+  -webkit-animation: float 3s ease-in-out infinite;
+}
+
+/* Experience */
+.experience {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.experience h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.experience span {
+  color: var(--font-color);
+}
+
+.experience p {
+  color: #bbb;
+  margin-top: 10px;
+}
+
+.time {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding-left: 50px; /* space for line */
+}
+
+.time::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #8b5cf6; /* purple line */
+}
+
+.time-dot {
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  background-color: #8b5cf6;
+  border-radius: 50%;
+}
+
+.experience-card {
+  background: #2d2d2d;
+  padding: 30px;
+  border-radius: 18px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-card .experience-header h3 {
+  color: white;
+  text-align: start;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.duration {
+  background: #332b45;
+  color: #c4b5fd;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.experience-card h4 {
+  color: #9ca3af;
+  font-weight: 500;
+  margin: 10px 0 15px;
+  text-align: left;
+}
+
+.experience-card ul {
+  padding-left: 18px;
+  color: #d1d5db;
+  text-align: left;
+}
+
+.experience-card ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+  font-family: "Saira", sans-serif;
+}
+
+.experience-card {
+  background: #2d2d2d;
+  padding: 30px 35px;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+/* Footer */
+.footer p {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Animations */
+/* Slider image animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* About section animation */
+/* hidden by default */
+.show-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+/* visible */
+.show-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive  */
+/* Responsive for Tab */
+@media only screen and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 120px 1100px 700px 70px;
+    /* grid-template-rows: auto; */
+    grid-template-areas:
+      "header header header"
+      "slider slider slider"
+      "experience experience experience"
+      "footer footer footer";
+    gap: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    z-index: 1000;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #111;
+    width: 200px;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+    gap: 12px;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .header .menu ul {
+    flex-direction: column;
+    gap: 12px;
+    margin-right: 0;
+  }
+
+  /* Slider */
+  .slider {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slider-content {
+    margin-left: 100px;
+  }
+
+  .slider .slider-content h1 {
+    font-size: 58px;
+  }
+
+  .slider .slider-content h2 {
+    font-size: 50px;
+  }
+
+  .slider .slider-content p {
+    font-size: 25px;
+    width: 550px;
+  }
+
+  .slider .slider-content #resume-btn {
+    padding: 15px 25px;
+    font-size: 22px;
+  }
+
+  .slider .slider-content #contact-btn {
+    padding: 15px 25px;
+    font-size: 22px;
+  }
+
+  /* Experience */
+  .experience h2 {
+    font-size: 40px;
+  }
+
+  .experience p {
+    font-size: 20px;
+  }
+
+  .experience-card .experience-header h3 {
+    font-size: 23px;
+  }
+
+  .experience-card h4 {
+    font-size: 18px;
+  }
+
+  .experience-card ul li {
+    font-size: 17px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ===============================
+   GRID & SECTION FIXES
+   =============================== */
+
+  .container,
+  .header,
+  .slider,
+  .about,
+  .education,
+  .training,
+  .skill,
+  .project,
+  .experience,
+  .contact,
+  .footer {
+    width: 100%;
+  }
+
+  /* ===============================
+   CARD WIDTH FIX
+   =============================== */
+
+  .skill-card,
+  .education-card,
+  .training-card,
+  .experience-card,
+  .premium-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* ===============================
+   GRID LAYOUT SAFE OVERRIDES
+   =============================== */
+
+  .skill-grid,
+  .project-grid,
+  .about-grid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Fix fixed-column grids without touching original code */
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  /* ===============================
+   SLIDER IMAGE FIX
+   =============================== */
+
+  .slider .slider-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ===============================
+   LARGE MARGIN FIX
+   =============================== */
+
+  .education-card,
+  .training-card,
+  .experience-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Responsive for Mobile */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 80px 900px 700px 70px;
+    /* grid-template-rows: auto; */
+    grid-template-areas:
+      "header header header"
+      "slider slider slider"
+      "experience experience experience"
+      "footer footer footer";
+    gap: 0;
+  }
+
+  /* Header */
+  .logo {
+    font-size: 15px;
+  }
+
+  .menu {
+    top: 100px;
+  }
+
+  /* Slider */
+
+  .slider {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slider-content {
+    margin-left: 50px;
+  }
+
+  .slider .slider-content h1 {
+    font-size: 40px;
+  }
+
+  .slider .slider-content h2 {
+    font-size: 30px;
+  }
+
+  .slider .slider-content p {
+    font-size: 14px;
+    width: 400px;
+  }
+
+  .slider .slider-content #resume-btn {
+    padding: 12px 17px;
+    font-size: 13px;
+  }
+
+  .slider .slider-content #contact-btn {
+    padding: 12px 17px;
+    font-size: 13px;
+  }
+
+  .slider .slider-img {
+    margin-top: 30px;
+  }
+
+  .slider .slider-img img {
+    margin-top: -30px;
+    margin-left: 0px;
+    animation: float 3s ease-in-out infinite;
+    -webkit-animation: float 3s ease-in-out infinite;
+  }
+
+  /* Experinece */
+  .experience h2 {
+    font-size: 27px;
+  }
+
+  .experience p {
+    font-size: 15px;
+  }
+
+  .experience-card {
+    margin-left: 0px;
+  }
+
+  .experience-card .experience-header h3 {
+    font-size: 18px;
+  }
+
+  .duration {
+    font-size: 12px;
+  }
+
+  .experience-card h4 {
+    font-size: 15px;
+  }
+
+  .experience-card ul li {
+    font-size: 13px;
+  }
+
+  .experience-card {
+    margin-left: 0px;
+  }
+
+  .footer p {
+    margin-top: 18px;
+  }
+
+  .menu {
+    width: 100%;
+    right: 0;
+  }
+
+  /* ===============================
+     IMAGES
+     =============================== */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

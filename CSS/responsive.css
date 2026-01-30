@@ -1,0 +1,620 @@
+/* Responsive  */
+/* Responsive for Tab */
+@media only screen and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px;
+    grid-template-rows: 100px 1000px 1200px 600px 1900px 600px 2200px 700px 420px 70px;
+    /* grid-template-rows: auto; */
+    grid-template-areas:
+      "header header header"
+      "slider slider slider"
+      "about about about"
+      "education education education"
+      "skill skill skill"
+      "training training training"
+      "project project project"
+      "experience experience experience"
+      "contact contact contact"
+      "footer footer footer";
+    gap: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    z-index: 1000;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #111;
+    width: 200px;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+    gap: 12px;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .header .menu ul {
+    flex-direction: column;
+    gap: 12px;
+    margin-right: 0;
+  }
+
+  /* Slider */
+  .slider {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slider-content {
+    margin-left: 100px;
+  }
+
+  .slider .slider-content h1 {
+    font-size: 58px;
+  }
+
+  .slider .slider-content h2 {
+    font-size: 50px;
+  }
+
+  .slider .slider-content p {
+    font-size: 25px;
+    width: 550px;
+  }
+
+  .slider .slider-content #resume-btn {
+    padding: 15px 25px;
+    font-size: 22px;
+  }
+
+  .slider .slider-content #contact-btn {
+    padding: 15px 25px;
+    font-size: 22px;
+  }
+
+  /* About */
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  .about .about-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 20px;
+  }
+
+  .about .about-content p {
+    font-weight: 400;
+  }
+  .about .about-img img {
+    display: none;
+  }
+
+  .about-card h4 {
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .about-card p {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+  }
+
+  /* Education */
+  .education {
+    margin-top: -10px;
+  }
+
+  .education h2 {
+    font-size: 40px;
+  }
+
+  .education p {
+    font-size: 20px;
+  }
+
+  .education-card {
+    margin-top: 70px;
+  }
+
+  .education-header h3 {
+    font-size: 22px;
+  }
+
+  .education-card h4 {
+    font-size: 16px;
+  }
+
+  .education-card p {
+    font-size: 17px;
+  }
+
+  /* Skill */
+  .skill h2 {
+    font-size: 32px;
+    margin-top: 130px;
+  }
+
+  .skill p {
+    font-size: 20px;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .skill-card h3 {
+    font-size: 23px;
+  }
+
+  .skill-card p {
+    font-size: 18px;
+  }
+
+  /* Training */
+  .training p {
+    font-size: 20px;
+  }
+
+  .training-header h3 {
+    font-size: 23px;
+  }
+
+  .training-card h4 {
+    font-size: 18px;
+  }
+
+  /* Project */
+  .project h2 {
+    font-size: 40px;
+  }
+
+  .project p {
+    font-size: 20px;
+  }
+
+  /* Experience */
+  .experience h2 {
+    font-size: 40px;
+  }
+
+  .experience p {
+    font-size: 20px;
+  }
+
+  .experience-card .experience-header h3 {
+    font-size: 23px;
+  }
+
+  .experience-card h4 {
+    font-size: 18px;
+  }
+
+  .experience-card ul li {
+    font-size: 17px;
+  }
+
+  /* Contact */
+  .contact h2 {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+
+  .contact p {
+    font-size: 18px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ===============================
+   GRID & SECTION FIXES
+   =============================== */
+
+  .container,
+  .header,
+  .slider,
+  .about,
+  .education,
+  .training,
+  .skill,
+  .project,
+  .experience,
+  .contact,
+  .footer {
+    width: 100%;
+  }
+
+  /* ===============================
+   CARD WIDTH FIX
+   =============================== */
+
+  .skill-card,
+  .education-card,
+  .training-card,
+  .experience-card,
+  .premium-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* ===============================
+   GRID LAYOUT SAFE OVERRIDES
+   =============================== */
+
+  .skill-grid,
+  .project-grid,
+  .about-grid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Fix fixed-column grids without touching original code */
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  /* ===============================
+   SLIDER IMAGE FIX
+   =============================== */
+
+  .slider .slider-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ===============================
+   LARGE MARGIN FIX
+   =============================== */
+
+  .education-card,
+  .training-card,
+  .experience-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Responsive for Mobile */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 80px 900px 1000px 630px 2400px 600px 3600px 700px 880px 70px;
+    /* grid-template-rows: auto; */
+    grid-template-areas:
+      "header header header"
+      "slider slider slider"
+      "about about about"
+      "education education education"
+      "skill skill skill"
+      "training training training"
+      "project project project"
+      "experience experience experience"
+      "contact contact contact"
+      "footer footer footer";
+    gap: 0;
+  }
+
+  /* Header */
+  .logo {
+    font-size: 15px;
+  }
+
+  .menu {
+    top: 100px;
+  }
+
+  /* Slider */
+
+  .slider {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slider-content {
+    margin-left: 50px;
+  }
+
+  .slider .slider-content h1 {
+    font-size: 40px;
+  }
+
+  .slider .slider-content h2 {
+    font-size: 30px;
+  }
+
+  .slider .slider-content p {
+    font-size: 14px;
+    width: 400px;
+  }
+
+  .slider .slider-content #resume-btn {
+    padding: 12px 17px;
+    font-size: 13px;
+  }
+
+  .slider .slider-content #contact-btn {
+    padding: 12px 17px;
+    font-size: 13px;
+  }
+
+  .slider .slider-img {
+    margin-top: 30px;
+  }
+
+  .slider .slider-img img {
+    margin-top: -30px;
+    margin-left: 0px;
+    animation: float 3s ease-in-out infinite;
+    -webkit-animation: float 3s ease-in-out infinite;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about h2 {
+    font-size: 27px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .about .about-content {
+    margin-left: 15px;
+  }
+
+  .about .about-content h3 {
+    font-size: 20px;
+  }
+
+  .about .about-content p {
+    font-size: 13px;
+  }
+
+  .about-cards {
+    gap: 23px;
+  }
+
+  .about-card i {
+    font-size: 25px;
+  }
+
+  .about-card h4 {
+    font-size: 15px;
+  }
+
+  .about-card p {
+    font-size: 13px;
+  }
+
+  /* Education */
+  .education h2 {
+    font-size: 27px;
+  }
+
+  .education p {
+    font-size: 14px;
+  }
+
+  .education-header h3 {
+    font-size: 20px;
+  }
+
+  .education-card h4 {
+    font-size: 15px;
+  }
+
+  .education-card p {
+    font-size: 13px;
+  }
+
+  /* Skill */
+  .skill h2 {
+    font-size: 27px;
+  }
+
+  .skill p {
+    font-size: 14px;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .skill-card h3 {
+    font-size: 18px;
+  }
+
+  .skill-card p {
+    font-size: 13px;
+  }
+
+  .tags span {
+    font-size: 12px;
+  }
+
+  /* Training */
+  .training h2 {
+    font-size: 27px;
+  }
+
+  .training p {
+    font-size: 14px;
+  }
+
+  .training-card {
+    margin-left: 0px;
+  }
+
+  .training-header h3 {
+    font-size: 18px;
+  }
+
+  .training-card h4 {
+    font-size: 15px;
+  }
+
+  .training-card p {
+    font-size: 13px;
+  }
+
+  .training-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+  }
+
+  .training-card ul li {
+    color: #cbd5f5;
+    line-height: 1.8;
+  }
+
+  /* Project */
+  .project h2 {
+    font-size: 27px;
+  }
+
+  .project p {
+    font-size: 14px;
+  }
+
+  .project-content h3 {
+    font-size: 18px;
+  }
+
+  .project-content p {
+    font-size: 13px;
+  }
+
+  .project-tags span {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+
+  /* Experinece */
+  .experience h2 {
+    font-size: 27px;
+  }
+
+  .experience p {
+    font-size: 15px;
+  }
+
+  .experience-card {
+    margin-left: 0px;
+  }
+
+  .experience-card .experience-header h3 {
+    font-size: 18px;
+  }
+
+  .duration {
+    font-size: 12px;
+  }
+
+  .experience-card h4 {
+    font-size: 15px;
+  }
+
+  .experience-card ul li {
+    font-size: 13px;
+  }
+
+  .experience-card {
+    margin-left: 0px;
+  }
+
+  /* Contact */
+  .contact h2 {
+    font-size: 27px;
+  }
+
+  .contact p {
+    font-size: 15px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+  }
+
+  .info-item h4 {
+    font-size: 16px;
+  }
+
+  .info-item p {
+    font-size: 14px;
+  }
+
+  .follow-title {
+    font-size: 17px;
+  }
+
+  .footer p {
+    margin-top: 18px;
+  }
+
+  .menu {
+    width: 100%;
+    right: 0;
+  }
+
+  /* ===============================
+     IMAGES
+     =============================== */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
